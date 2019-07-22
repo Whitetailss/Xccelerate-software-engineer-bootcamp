@@ -1,0 +1,244 @@
+<html></html>
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <title>Fantastic Paint</title>
+    <div class="header">
+</head>
+
+<body>
+    <script type='text/javascript' src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <div class="row">
+        <div class="toolbar">
+
+        </div>
+    </div>
+    <div class="maincanvas">
+        <div class="column column-1 canvas-container">
+            <canvas id="canvas-real" width='1280px' height='720px'
+                style='border:1px black dotted; position:absolute '></canvas>
+            <canvas id="canvas-draft" width='1280px' height='720px'
+                style='border:1px black dotted; position:absolute'></canvas>
+
+        </div>
+    </div>
+    <div class="column column-1 toolbar-main">
+        <div class="column column-3 toolbar-1">
+            <div class="buttons">
+                <a id="line"><i class="fas fa-grip-lines-vertical fa-2x btn"></i></a>
+                &nbsp;
+                <a id="pencil"><i class="fas fa-pencil-alt fa-2x btn"></i></a>
+                &nbsp;
+                <a id="paintbrush"><i class="fas fa-paint-brush fa-2x btn"></i></a>
+                &nbsp;
+                <a id="eraser"><i class="fas fa-eraser fa-2x btn"></i></a>
+                &nbsp;
+                <a id="rectangle"><i class="far fa-square fa-2x btn"></i></a>
+                &nbsp;
+                <a id="fillColor"><i class="fas fa-fill fa-2x btn"></i></a>
+                &nbsp;
+                <a id="copy"><i class="fas fa-copy fa-2x btn"></i></a>
+                &nbsp;
+                <a id="paste"><i class="fas fa-paste fa-2x btn"></i></a>
+                &nbsp;
+                <a id="undo"><i class="fas fa-undo fa-2x btn"></i></a>
+                &nbsp;
+                <a id="redo"><i class="fas fa-redo fa-2x btn"></i></a>
+                &nbsp;
+                <a id="clearing"><i class="fas fa-recycle fa-2x btn"></i></a>
+                &nbsp;
+                <a id="circle"><i class="far fa-circle fa-2x btn"></i></a>
+                &nbsp;
+                <a id="flower"><i class="fab fa-pagelines fa-2x btn"></i></a>
+                &nbsp;
+                <!-- <a id="text"><i class="fas fa-font fa-2x btn"></i></a> -->
+                <a id="fillText"><i class="fas fa-font fa-2x btn"></i></a>
+                &nbsp;
+                <a id="drawingCurve"><i class="fas fa-bezier-curve fa-2x btn"></i></a>
+                &nbsp;
+                <a id="quadraticCurve"><i class="fas fa-circle-notch fa-2x btn"></i></a>
+                &nbsp;
+                <form class="inputText" id="textInput"> Input: <input type="text" name="fname"> </form>
+
+                <!-- <a id="undo"><i class="fas fa-undo fa-2x btn"></i></a>
+                    &nbsp;
+                    <a id="redo"><i class="fas fa-redo fa-2x btn"></i></a>
+                    &nbsp; -->
+            </div>
+        </div>
+        <div class="column column-2 toolbar-side">
+            <div class="colorpicker">
+                <label for="color-input" id="color-label" style="background-color: red"></label>
+                <input type="checkbox" id="color-input" checked></input>
+
+                <div id="color-picker">
+                    <canvas id="color-block" height="150" width="150"></canvas>
+                    <canvas id="color-strip" height="150" width="30"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script type='text/javascript'>
+        $('#pencil').click(() => {
+            currentFunction = new Pencil(contextReal, contextDraft);
+        });
+        $('#paintbrush').click(() => {
+            currentFunction = new Paintbrush(contextReal, contextDraft);
+        });
+        $('#eraser').click(() => {
+            currentFunction = new Eraser(contextReal, contextDraft);
+        });
+
+        $('#circle').click(() => {
+            currentFunction = new Circle(contextReal, contextDraft);
+        });
+        $('#text').click(() => {
+            currentFunction = new Text(contextReal, contextDraft);
+        });
+        $('#rectangle').click(() => {
+            currentFunction = new DrawingRectangle(contextReal, contextDraft);
+        });
+
+        $('#line').click(() => {
+            currentFunction = new DrawingLine(contextReal, contextDraft)
+        });
+
+        $('#fillColor').click(() => {
+            currentFunction = new Filling(contextReal, contextDraft);
+
+        });
+        $('#copy').click(() => {
+            currentFunction = new Copying(contextReal, contextDraft);
+        });
+
+        $('#paste').click(() => {
+            currentFunction = new Pasting(contextReal, contextDraft);
+        });
+        $('#undo').click(() => {
+            cUndo()
+        });
+        $('#redo').click(() => {
+            cRedo()
+        });
+        $('#clearing').click(() => {
+            clearing();
+        });
+        $('#flower').click(() => {
+            currentFunction = new Flower(contextReal, contextDraft);
+        });
+        $('#fillText').click(() => {
+            currentFunction = new fillText(contextReal, contextDraft);
+
+        });
+        $('#drawingCurve').click(() => {
+            currentFunction = new DrawingCurve(contextReal, contextDraft);
+
+        });
+        $('#quadraticCurve').click(() => {
+            currentFunction = new quadraticCurveTo(contextReal, contextDraft);
+
+        });
+
+
+    </script> -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/canvas-common.js"></script>
+    <!-- jor -->
+    <script src="./js/pencil.js"></script>
+    <script src="./js/paintbrush.js"></script>
+    <script src="./js/eraser.js"></script>
+    <!-- seb -->
+    <script src="./js/fillText.js"></script>
+    <script src="./js/quadraticCurveTo.js"></script>
+    <script src="./js/drawingCurve.js"></script>
+    <!-- Gur -->
+    <script src="./js/flower.js"></script>
+    <script src="./js/circle.js"></script>
+    <!-- Elvis -->
+    <script src="./js/line.js"></script>
+    <script src="./js/rectangle.js"></script>
+    <script src="./js/copyAndPaste.js"></script>
+    <script src="./js/fillColor.js"></script>
+    <script src="./js/clearing.js"></script>
+    <script src="./js/checkBgColor.js"></script>
+    <script src="./js/undo.js"></script>
+
+    <script type='text/javascript'>
+        $(() => {
+
+
+            $('#pencil').click(() => {
+                currentFunction = new Pencil(contextReal, contextDraft);
+            });
+            $('#paintbrush').click(() => {
+                currentFunction = new Paintbrush(contextReal, contextDraft);
+            });
+            $('#eraser').click(() => {
+                currentFunction = new Eraser(contextReal, contextDraft);
+            });
+
+            $('#circle').click(() => {
+                currentFunction = new Circle(contextReal, contextDraft);
+            });
+            $('#text').click(() => {
+                currentFunction = new Text(contextReal, contextDraft);
+            });
+            $('#rectangle').click(() => {
+                currentFunction = new DrawingRectangle(contextReal, contextDraft);
+            });
+
+            $('#line').click(() => {
+                currentFunction = new DrawingLine(contextReal, contextDraft)
+            });
+
+            $('#fillColor').click(() => {
+                currentFunction = new Filling(contextReal, contextDraft);
+
+            });
+            $('#copy').click(() => {
+                currentFunction = new Copying(contextReal, contextDraft);
+            });
+
+            $('#paste').click(() => {
+                currentFunction = new Pasting(contextReal, contextDraft);
+            });
+            $('#undo').click(() => {
+                cUndo()
+            });
+            $('#redo').click(() => {
+                cRedo()
+            });
+            $('#clearing').click(() => {
+                clearing();
+            });
+            $('#flower').click(() => {
+                currentFunction = new Flower(contextReal, contextDraft);
+            });
+            $('#fillText').click(() => {
+                currentFunction = new fillText(contextReal, contextDraft);
+
+            });
+            $('#drawingCurve').click(() => {
+                currentFunction = new DrawingCurve(contextReal, contextDraft);
+
+            });
+            $('#quadraticCurve').click(() => {
+                currentFunction = new quadraticCurveTo(contextReal, contextDraft);
+
+            });
+            currentFunction = new Pencil(contextReal, contextDraft);
+
+        });
+
+    </script>
+</body>
+
+<!-- bug -->
+<!-- dont use drawline function after eraser function -->
+<!-- undo function is not working on fill text anf copy function -->

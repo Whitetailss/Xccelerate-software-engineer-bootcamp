@@ -1,0 +1,138 @@
+/* Grid layout */
+/* Resetting the box model */
+.row,
+.column{
+    box-sizing: border-box;
+}
+/* Clearing Floats */
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after{
+    clear:both;
+}
+/*Defining Columns*/
+.column{
+    position: relative;
+    float: left;
+}
+/* Creating Gutters - better separation between columns for legibility */
+.column + .column {
+    margin-left: 1.6%
+}
+.column-1{
+    width: 100%;
+}
+.column-2{
+    width: 15.3333333333%;
+}
+.column-3{
+    width: 83.0666666667;
+}
+.column-4{
+    width: 6.86666666667%;
+}
+.column-5{
+    width: 91.5333333333%;
+}
+.column-6{
+    width: 23.8%;
+}
+.column-7{
+    width: 74.6%;
+}
+@media only screen and (max-width: 550px){
+    .column-1
+    .column-2
+    .column-3{
+        width: auto;
+        float: none;
+    }
+    .column + .column{
+        margin-left: 0;
+    }
+}
+.canvas{
+    border:1px black dotted;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px
+}
+#canvas-draft{
+    background-color: transparent;
+}
+/*Color Palette*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+#color-input {
+  display: none;
+}
+#color-label {
+    margin-left: 40px;
+    position: absolute;
+    height: 162px;
+    width: 30px;
+  } 
+  
+#color-input:checked ~ #color-picker {
+  opacity: 1;
+}
+#color-picker {
+    position: absolute;
+    left: 70px; 
+    background-color: white;
+    height: 150px;
+    width: 185px;
+    border: solid 1px #cccccc;
+    opacity: 0;
+    padding: 5px;
+  }
+canvas:hover {
+  cursor: crosshair;
+}
+/* Body CSS */
+body{
+  background-image: url("../assets/img/wood_planks_new_0038_01_preview.jpg");
+  background-repeat: repeat;
+  padding: 10px;
+}
+#canvas-real{
+  background-image: url("../assets/img/df2511d6f08f2de0333518f802656278.jpg");
+  background-size: cover;
+}
+.toolbar-main{
+  position: relative;
+  bottom: -730px;
+}
+a:hover{
+  color: #FFFFFF;
+}
+#textinput:hover {
+  width: 200px;
+}
+.btn{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(238, 116, 16);
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 10px;
+}
+.toolbar-1{
+  width: 500px;
+}
+.toolbar-side{
+  width: 220px;
+  left: 495px
+}

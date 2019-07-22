@@ -1,0 +1,162 @@
+<<<<<<< HEAD
+=======
+/* Grid layout */
+/* Resetting the box model */
+
+.row,
+.column{
+    box-sizing: border-box;
+}
+
+/* Clearing Floats */
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after{
+    clear:both;
+}
+
+/*Defining Columns*/
+
+.column{
+    position: relative;
+    float: left;
+}
+
+/* Creating Gutters - better separation between columns for legibility */
+
+.column + .column {
+    margin-left: 1.6%
+}
+
+.column-1{
+    width: 100%;
+}
+
+.column-2{
+    width: 15.3333333333%;
+}
+
+.column-3{
+    width: 83.0666666667;
+}
+
+.column-4{
+    width: 6.86666666667%;
+}
+
+.column-5{
+    width: 91.5333333333%;
+}
+
+.column-6{
+    width: 23.8%;
+}
+
+.column-7{
+    width: 74.6%;
+}
+
+@media only screen and (max-width: 550px){
+    .column-1
+    .column-2
+    .column-3{
+        width: auto;
+        float: none;
+    }
+    .column + .column{
+        margin-left: 0;
+    }
+}
+
+
+
+
+>>>>>>> 660ee8bdd7cd8853bdd43120bdb59ea9ef0c7fab
+.canvas{
+    border:1px black dotted;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px
+}
+
+#canvas-draft{
+    background-color: transparent;
+<<<<<<< HEAD
+=======
+}
+
+
+
+/*buttons*/
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+}
+/* h2 {
+  background-color: #dbdbdb;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-family: 'Open Sans';
+} */
+#color-input {
+  display: none;
+}
+/* #color-label {
+  margin-left: 15px;
+  position: absolute;
+  height: 30px;
+  width: 50px;
+}  */
+
+#color-label {
+    margin-left: 0px;
+    position: absolute;
+    height: 30px;
+    width: 196px;
+    bottom: -40px;
+  } 
+  
+#color-input:checked ~ #color-picker {
+  opacity: 1;
+}
+/* #color-picker {
+  position: absolute;
+  left: 70px; 
+  background-color: white;
+  height: 150px;
+  width: 185px;
+  border: solid 1px #ccc;
+  opacity: 0;
+  padding: 5px;
+} */
+
+#color-picker {
+    position: absolute;
+    left: 0px; 
+    background-color: white;
+    height: 150px;
+    width: 185px;
+    border: solid 1px #ccc;
+    opacity: 0;
+    padding: 5px;
+    bottom: -210px;
+  }
+canvas:hover {
+  cursor: crosshair;
+>>>>>>> 660ee8bdd7cd8853bdd43120bdb59ea9ef0c7fab
+}
