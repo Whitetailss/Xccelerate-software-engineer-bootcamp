@@ -1,0 +1,79 @@
+<div class="form-wrapper">
+
+    <div class="form-container">
+        <div class="form-box">
+            <!-- logo & text -->
+            <div class="form-top">
+                <img src="../img/logo/logo_trans.png" alt="logo">
+
+            </div>
+
+            <div class="split">
+                <!-- social login -->
+                <div class="social-log">
+
+                    <p>Sign up via social network</p>
+
+                    <div class="social-wrapper">
+                        <div class="social">
+                            <a href="/auth/facebook"><img src="../img/social/facebook.png" alt="facebook"></a>
+                        </div>
+
+                        <div class="social">
+                            <a href="/"><img id="google-icon" src="../img/social/google-plus3.png" alt="google+"></a>
+                        </div>
+                    </div>
+
+                    <div class="line">
+                        <!-- line -->
+                    </div>
+
+                </div>
+
+                <!-- form, input -->
+                <form class="main-form" id='local-signup' action='/signup' method='post'>
+                    <div class="form-mid">
+
+                        <p id="form-p">Create your new account</p>
+
+                        <div class="data">
+                            <input type="text" name="username" placeholder=" Username" required>
+                        </div>
+
+                        <div class="data">
+                            <input type="email" name="email" placeholder=" Email " required>
+                        </div>
+
+                        <div class="mid-pw">
+                            <div class="data">
+                                <input class="pw" id="pw1" type="password" name="password"
+                                    placeholder=" Password (6 characters required)" minlength="6" required>
+                            </div>
+                            <div class="data">
+                                <input class="pw" id="pw2" type="password" name="pin"
+                                    placeholder=" Confirm password" minlength="6" required>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- signup page -->
+                    <div class="form-sign">
+
+                        <p>Got your account already?</p>
+
+                        <a class="create" href="/login">Log in here</a>
+
+                    </div>
+
+                    <!-- back & login -->
+                    <div class="form-bottom">
+
+                        <a class="back" href="/">Back</a>
+                    
+                            <input type='submit' class="login-btn" value='Sign Up' />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

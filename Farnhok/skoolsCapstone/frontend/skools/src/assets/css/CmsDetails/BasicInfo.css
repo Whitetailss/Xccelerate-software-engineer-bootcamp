@@ -1,0 +1,23 @@
+.basicInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+
+.basicInfo input{
+    
+    
+    
+}
+
+.classesInput input, h6{
+    margin-left: 20px;
+    display: flex;
+    justify-items: space-evenly;
+}
+
+.classesInput label {
+    margin-left: 10px;
+}

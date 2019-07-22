@@ -1,0 +1,16 @@
+#homeStatsContainer {
+    background-color: #0FACF3;
+    min-height: 10vh;
+}
+
+#homeStatsBox {
+    color: #FEFEFE;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 3rem 0 3rem 0
+}
+
+#homeStatsBox h3, #homeStatsBox p {
+    margin: 1rem 0 1rem 0;
+} 

@@ -1,0 +1,24 @@
+
+<h1 id='welcome-msg'></h1>
+
+<h2>Create New Registry</h2>
+
+<form id='create_registry' action='/console' method='post'>
+<input type='text' name='registry_name' />
+<input type='date' name='ocassion_date' />
+
+<select name="ocassion_name">
+  <option value="newborn">Baby Shower</option>
+  <option value="wedding">Wedding Shower</option>
+  <option value="house">House Warming</option>
+  <option value="birthday">Children birthday</option>
+</select>
+
+<input type='text' name='reg_password' minlength="4" maxlength="6"/>
+<input type='submit' value='new registry'/>
+</form>
+
+
+<div class="to-gift">
+  <a href="/gift">to gift page</a>
+</div>

@@ -1,0 +1,80 @@
+<header>
+    <div class="navbar">
+        <div class="width-container">
+            <div class="nav-wrapper">
+
+                <!-- nav menu -->
+                <button class="nav-menu" id="nav-menu" data-toggle="collapse" data-target="js-menu">
+                    <img src="http://localhost:8080//img/menu2.png" alt="menu">
+                </button>
+
+                <!-- logo -->
+                <a class="logo-nav" href="/"><img class="logo" src="http://localhost:8080//img/logo/logo_trans.png" alt="logo"></a>
+
+                <!-- desktop nav -->
+                <div class="nav-list">
+                    <ul>
+                        <!--handlebars if else condition to template the login/logout nav-->
+                        {{#if isAuthenticated}}
+                        <li>
+                            <a href="../#partner">Partners</a>
+                        </li>
+                        <li>
+                            <a href="../#how">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="/">Occasions</a>
+                        </li>
+                        <li>
+                            <a href="/">Gift Ideas</a>
+                        </li>
+                        <li>
+                            <a href="/console">Registry</a>
+                        </li>
+                        <li>
+                            <form id='log-out' action='/logout' method='get'>
+                                <button type='submit' id="login">Logout</button>
+                            </form>
+
+                        </li>
+                        {{else}}
+                        <li>
+                            <a href="../#partner">Partners</a>
+                        </li>
+                        <li>
+                            <a href="../#how">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="/">Occasions</a>
+                        </li>
+                        <li>
+                            <a href="/">Gift Ideas</a>
+                        </li>
+                        <li>
+                            <a href="/console">Registry</a>
+                        </li>
+                    </ul>
+
+                    <ul class="signup">
+                        <li>
+                            <form id='sign-up' action='/signup' method='get'>
+                                <button type='submit' id="signup">Sign Up</button>
+                            </form>
+                        </li>
+
+                    </ul>
+
+                    <ul class="login">
+                        <li>
+                            <form id='log-in' action='/login' method='get'>
+                                <button type='submit' id="login">Login</button>
+                            </form>
+                        </li>
+                    </ul>
+                    {{/if}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>

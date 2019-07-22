@@ -1,0 +1,64 @@
+//media query
+$phone: 414px; //iPhone 5
+$mobile: 768px; //iPad
+$tablet: 1000px; //web
+
+//color
+$navColor: rgb(255, 255, 255);
+$errPageColor: rgb(250, 250, 250);
+$bgColor: rgb(252, 215, 159);
+$bgColor1: rgba(221, 221, 221, 0.952);
+$bgColor2: rgb(133, 133, 133);
+$bgColor3: rgb(247, 247, 247);
+$bgColor4: rgb(255, 255, 255);
+$textColor: rgb(97, 96, 96);
+$textColor1: rgb(182, 181, 181);
+$textColor2: rgb(88, 88, 88);
+$textColor3: rgb(126, 126, 126);
+$textColor4: rgb(177, 174, 174);
+$textHoverColor: rgb(235, 159, 46);
+$textHoverColor1: rgb(65, 64, 64);
+$textHoverColor2: rgb(3, 0, 0);
+$btnColor: rgb(237, 150, 57);
+$btnHoverColor: rgb(235, 139, 14);
+$btnSelect: rgb(236, 172, 88);
+
+//font size
+$buttonFont: 14px;
+$imgAlt: 14px;
+$social: 24px;
+$socialWeight: 600;
+$regWeight: 600;
+$headWeight: 500;
+
+//max width nav
+$maxWidth: 1400px;
+
+//content width padding
+$navPadding: 15px 50px;
+$logoLeft: 10%;
+$logoSmallLeft: 15%;
+$smallPadding: 15px 10px; //for small mobile
+$moPadding: 15px 15px; //for mobile
+$contentPadding: 160px 80px 80px 80px;
+$content: 50px 80px;
+$menuImg: 0 10px;
+$footerPadding: 0 50px;
+$footerList: 0 10px;
+$icons: 40px 20px;
+$fooText: 30px 20px;
+$foo: 0 20px;
+$fooTop: 15px;
+$fooMo: 5px 0;
+$err: 35px;
+$socialText: 20px;
+$loginText: 10px;
+$head: 30px;
+$homeMargin: 50px;
+
+
+//register page padding
+$formPad: 30px 40px;
+
+//margin
+$mainMargin: 80px;

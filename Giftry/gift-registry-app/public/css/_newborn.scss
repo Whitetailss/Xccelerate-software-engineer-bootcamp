@@ -1,0 +1,225 @@
+.g-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    z-index: -10;
+
+    .g-sidebar {
+        background-color: $bgColor1;
+        width: 20vw;
+        height: 100vh;
+
+        .sidebar-header {
+            font: $textColor2 1.4em;
+            padding: 20px 5px;
+            text-align: center;
+
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        .cat-head {
+            font: $textColor1 1.2em bold;
+            position: relative;
+            margin: 10px;
+            border-bottom: 0.5px solid $textColor1;
+
+            &:hover {
+                color: $textHoverColor;
+                height: 180px
+            }
+
+            &:hover ul {
+
+                display: block
+            }
+
+            ul {
+                position: absolute;
+                top: 30px;
+                display: none;
+
+                &:hover {
+                    display: block;
+                }
+            }
+        }
+
+
+    }
+
+    .gallery {
+        // @include flex-center(column);
+        align-self: top;
+        width:100%;
+        text-align: center;
+        // padding-left: 7vw;
+
+        #product-list{
+            display:flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        
+            .product-item{
+                width: 200px;
+                height:300px;
+                border: solid 0.5px $textColor4;
+                border-radius: 10px;
+                margin: 20px;
+                z-index: 1;
+                text-align: center;
+            }
+        // width: 100%;
+        // // padding-left: 7vw;
+        // text-align: center;
+        // padding: 20px 0;
+        }
+
+        #select-form {
+            padding-top: 50px;
+            z-index: -1;
+
+            #product-list {
+                @include flex-evenly();
+
+                .product-item {
+                    width: 200px;
+                    height: 300px;
+                    border: solid 0.5px $textColor4;
+                    border-radius: 10px;
+
+
+                    /* The container */
+                    .select-text {
+                        display: block;
+                        position: relative;
+                        // padding-left: 35px;
+                        margin-top: 80px;
+                        margin-left: 40px;
+                        width: 100%;
+
+
+                        cursor: pointer;
+                        font-size: 18px;
+                        color: rgb(51, 51, 51);
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+
+                    /* Hide the browser's default checkbox */
+                    .select-text input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+
+                    /* Create a custom checkbox */
+                    .checkmark {
+                        position: absolute;
+                        top: 50px;
+                        left: 20px;
+                        height: 30px;
+                        width: 70px;
+                        background-color: rgb(221, 221, 221);
+                        border-radius: 10%;
+                        text-align: center;
+
+                        p {
+                            display: block;
+                            // &:after {
+                            //     display:none;
+                            // }
+                        }
+                    }
+
+                    /* When the checkbox is checked, add a blue background */
+                    .select-text input:checked~.checkmark {
+                        background-color: $btnColor;
+                        p {
+                            display: none;
+                            // &:after {
+                            //     display:none;
+                            // }
+                        }
+                    }
+
+                    /* Create the checkmark/indicator (hidden when not checked) */
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+
+                    // .checkmark {
+
+                    //     span:after {
+                    //         display: none;
+                    //     }
+                    // }
+
+                    /* Show the checkmark when checked */
+                    .select-text input:checked~.checkmark:after {
+                        display: block;
+                    }
+
+                    /* Style the checkmark/indicator */
+                    .select-text .checkmark:after {
+                        left: 30px;
+                        top: 3px;
+                        width: 10px;
+                        height: 15px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            #select-list {
+                display: none; //click <a> show
+                margin: auto;
+                margin-top: 50px;
+                padding: 5px 15px;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+                border: none;
+                color: $navColor;
+                background-color: $btnColor;
+                font-weight: $regWeight;
+                font-size: $buttonFont;
+
+                &:hover {
+                    background-color: $btnHoverColor;
+                    transition: 0.2s;
+                    -webkit-transition: 0.2s;
+                    -moz-transition: 0.2s;
+                    -ms-transition: 0.2s;
+                    -o-transition: 0.2s;
+                }
+            }
+        }
+
+        .pick-gift {
+            margin-top: 150px;
+            margin: auto;
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+
+    }
+}

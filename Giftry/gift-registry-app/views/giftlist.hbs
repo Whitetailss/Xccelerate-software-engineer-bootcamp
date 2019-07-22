@@ -1,0 +1,34 @@
+{{!-- <style type='text/css'>
+.tg{width:100%; border-collapse: collapse; border-spacing:0; border: 1px solid black;}
+.tg-0lax{text-align: center}
+</style> --}}
+
+
+<table class="tg">
+  <tr>
+    <th class="tg-s268">Product Category</th>
+    <th class="tg-0lax">Description</th>
+    <th class="tg-0lax">Price</th>
+    <th class="tg-0lax">Checked</th>
+    <th class="tg-0lax">Contributor Name</th>
+    <th class="tg-0lax">Contributor Email</th>
+    <th class="tg-0lax"></th>
+  </tr>
+
+{{#each item}}
+  <tr>
+    <td class="tg-0lax">{{product_cat}}</td>
+    <td class="tg-0lax">{{description}}</td>
+    <td class="tg-0lax">${{price}}</td>
+    <td class="tg-0lax"><input type='checkbox' id={{gift_id}}></td>
+    <td class="tg-0lax">{{buyer_name}}</td>
+    <td class="tg-0lax">{{buyer_email}}</td>
+    <td class="tg-0lax"></td>
+  </tr>
+{{/each}}
+  
+</table>
+
+
+<!--we should first generate a link then send that link to through whatsapp or email-->
+<a target="_blank" href="https://web.whatsapp.com/send?text=http://localhost:8080/console/registry/status/32" data-original-title="whatsapp" rel="tooltip" data-placement="left" data-action="share/whatsapp/share"><i class="fa fa-whatsapp"></i>whatsapp</a>

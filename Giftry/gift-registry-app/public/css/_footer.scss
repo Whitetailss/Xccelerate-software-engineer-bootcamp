@@ -1,0 +1,220 @@
+footer {
+    @include flex-center(column);
+    padding: $footerPadding;
+    background-color: $bgColor1;
+
+
+    .social {
+        @include flex-center(row);
+        float: left;
+        padding: $icons;
+
+        @include responsive($tablet) {
+            @include flex-center(row);
+        }
+
+        @include responsive($mobile) {
+            @include flex-center(row);
+        }
+
+        @include responsive($phone) {
+            @include flex-center(row);
+        }
+
+        .social-wrapper {
+            @include flex-center(row);
+
+            @include responsive($tablet) {
+                @include flex-center(column);
+            }
+
+            @include responsive($mobile) {
+                @include flex-center(column);
+            }
+
+            @include responsive($phone) {
+                @include flex-center(column);
+            }
+
+            .social-text {
+                font-size: $social;
+                font-weight: $socialWeight;
+                color: $textColor;
+
+                @include responsive($tablet) {
+                    padding-bottom: $socialText;
+                }
+
+                @include responsive($mobile) {
+                    padding-bottom: $socialText;
+                }
+
+                @include responsive($phone) {
+                    padding-bottom: $socialText;
+                }
+
+            }
+
+            .icons {
+                color: $textColor;
+                font-size: $imgAlt;
+                padding: $foo;
+
+                @include responsive($tablet) {
+                    padding: $fooTop;
+                }
+
+                @include responsive($mobile) {
+                    padding: $fooTop;
+                }
+
+                @include responsive($phone) {
+                    @include flex-center(column);
+                    padding: $fooTop;
+                }
+
+                img {
+                    width: 30px;
+                    height: auto;
+                    opacity: 0.6;
+
+                    &:hover {
+                        opacity: 0.8;
+                        transition: 0.3s;
+                        -webkit-transition: 0.3s;
+                        -moz-transition: 0.3s;
+                        -ms-transition: 0.3s;
+                        -o-transition: 0.3s;
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+
+    // .break {
+    //     border-top: 1px solid $textColor1;
+    //     opacity: 0.8;
+    //     width: 100vw;
+    // }
+
+
+    .foo {
+        @include flex-between();
+        color: $textColor;
+        padding: $fooText;
+
+
+        @include responsive($tablet) {
+            float: left;
+        }
+
+        @include responsive($mobile) {
+            @include flex-center(column);
+            float: left;
+        }
+
+        @include responsive($phone) {
+            @include flex-center(column);
+            float: left;
+        }
+
+
+        .foo-reserve {
+
+            a {
+                text-decoration: none;
+                color: $textColor;
+                padding: $footerList;
+
+                &:hover {
+                    color: $textHoverColor2;
+                    transition: 0.5s;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                }
+
+                @include responsive($tablet) {}
+
+                @include responsive($mobile) {
+                    @include flex-center(column);
+                    padding: $fooMo;
+                }
+
+                @include responsive($phone) {
+                    @include flex-center(column);
+                    padding: $fooMo;
+                }
+            }
+
+        }
+
+        .foo-copy {
+            padding: $footerList;
+
+
+            @include responsive($tablet) {
+                padding: $fooMo;
+            }
+
+            @include responsive($mobile) {
+                @include flex-center(column);
+                padding: $fooMo;
+            }
+
+            @include responsive($phone) {
+                @include flex-center(column);
+                padding: $fooMo;
+            }
+        }
+
+    }
+
+
+    //desktop order
+    .foo>#order1 {
+        order: 2;
+    }
+
+    .foo>#order2 {
+        order: 1;
+    }
+
+    //mobile order reverse
+    @include responsive($tablet) {
+        // .foo>#order1 {
+        //     order: 1;
+        // }
+
+        // .foo>#order2 {
+        //     order: 2;
+        // }
+    }
+
+    @include responsive($mobile) {
+        .foo>#order1 {
+            order: 1;
+        }
+
+        .foo>#order2 {
+            order: 2;
+        }
+    }
+
+    @include responsive($phone) {
+        .foo>#order1 {
+            order: 1;
+        }
+
+        .foo>#order2 {
+            order: 2;
+        }
+    }
+
+
+}

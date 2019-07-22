@@ -1,0 +1,102 @@
+.navBarActive {
+    color: #0FACF3;
+}
+
+#nav {
+    color: #FEFEFE;
+    background-color: #FEFEFE;
+    border-bottom: 0.1px solid #E6EAEE!important;
+}
+
+#navLogo {
+    color: #0FACF3 !important;
+    padding-left: 2rem;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navText {
+    text-decoration: none !important;
+    padding: 0 1.5rem;
+    color: #000000 !important;
+}
+
+.navText:hover {
+    color: #0FACF3 !important;
+}
+
+.narbar-light, .navbar-toggler {
+    border: none !important;
+    color: #0FACF3 !important;
+}
+
+#navSchoolArea {
+    text-decoration: none !important;
+    padding: 0 1.5rem;
+    color: #F262D3 !important;
+    border-left: 0.1px solid #e1e2e4!important;
+}
+
+#navSchoolArea:hover{
+    color: #ff00c8 !important;
+}
+
+#navBarIcon{
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    border: 1px solid #0FACF3;
+}
+
+.dropdown-menu {
+    margin-top: 1rem !important;
+    border: 1px solid #e1e2e4!important;
+    border-radius: 8px;
+    min-width: 0 !important;
+}
+
+.dropdown-toggle {
+    padding: 0.1rem 0.5rem 0.1rem 0 !important;
+}
+
+.dropdown-item {
+    padding: 0.5rem 0 !important;
+    background-color: none !important; 
+    display: flex;
+    justify-content: left;
+}
+
+.dropdown, .dropdown-menu, .dropdown-item:active, .dropdown, .dropdown-menu, .dropdown-item:hover {
+    color: none !important; 
+    background-color: #FFFFFF !important; 
+}
+
+@media only screen and (max-width: 767px) {
+    .dropdown-menu {
+        margin-top: 0rem !important;
+        border: none !important;
+        padding: 0 !important;
+        min-width: 0 !important;
+    }
+
+    .dropdown-item {
+        padding: 0.3rem 0 0 0 !important;
+        width: 0 !important;
+    }
+
+    .ml-auto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        display: unset;
+    }
+}

@@ -1,0 +1,26 @@
+#homeInfoContainer {
+    background-color: #FEFEFE;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+.homeInfoBox {
+    margin: auto 1rem;
+    color: #000000;
+    text-align: center;
+}
+
+.homeInfoCol {
+    padding: 0.5rem;
+}
+
+.homeInfoBox p {
+    margin: 1rem auto;
+    width: 80%;
+    text-align: center;
+}

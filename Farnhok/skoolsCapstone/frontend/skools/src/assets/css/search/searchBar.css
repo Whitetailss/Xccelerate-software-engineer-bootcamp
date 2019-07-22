@@ -1,0 +1,89 @@
+
+.searchSearchButtonDrop {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchSearchButtonDrop:hover {
+    cursor: pointer;
+}
+
+.searchSearchDropButton {
+    background-color: #FFFFFF;
+    border-top: 1px solid #e1e2e4;
+    border-left: 1px solid #e1e2e4;
+    border-right: 1px solid #e1e2e4;
+    width: 90%;
+    color: #000000;
+    padding: 0.5rem 2rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    height: 3.2rem;
+    margin: 1.5rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchSearchDropBottom {
+    border-bottom: 1px solid #e1e2e4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 2px 10px -2px #0000001a;
+}
+
+.searchSearchArrow {
+    margin: auto 0 auto 0;
+}
+
+#searchSearchForm {
+    border-bottom: 1px solid #e1e2e4 !important;
+    border-left: 1px solid #e1e2e4 !important;
+    border-right: 1px solid #e1e2e4 !important;  
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0 2px 10px -2px #0000001a;
+}
+
+#searchSearchButtonBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#searchSearchButtonBox button {
+    background-color: #0FACF3;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    margin-bottom: 1.1rem;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 20px;
+    height: 3rem;
+}
+
+#searchSearchButtonBox button:hover {
+    background-color: #16b5ff ;
+}
+
+.searchSearchInput {
+    border: 1px solid #e1e2e4 !important;
+    width: 100%;
+    padding-left: 12px;
+    border-radius: 8px !important;
+    height: 3rem;
+    color:  #767e88;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0.5px 2px -1px #0000001a
+}
+
+.searchSearchInput:focus, .searchSearchInput:hover {
+    border: 1px solid #16b5ff !important;
+}

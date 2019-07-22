@@ -1,0 +1,154 @@
+.searchSchoolContainerMargin {
+    margin-bottom: 26vh;
+}
+
+.searchSchoolContainer {
+    border: 1px solid #e1e2e4;
+    border-radius: 5px;
+    width: 90%;
+    min-height: 10vh;
+    margin: 0.5rem auto 0rem auto;
+    box-shadow: 0 1px 4px -2px #0000001a
+}
+
+.searchSchoolBoxTitle, .searchSchoolBoxStats, .searchSchoolBoxButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.searchSchoolBoxImg {
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.searchSchoolBoxImg img {
+    object-fit: cover;
+    border-radius: 5px;
+    min-height: 100%;
+    width: 100%;
+    object-position: 50% 65%;
+    filter: brightness(110%);
+}
+
+.searchSchoolBoxImg div {
+    object-fit: cover;
+    border: 1px solid #e1e2e4;
+    border-radius: 5px;
+    height: 20vh;
+    width: 100%;
+    object-position: 50% 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e1e2e4;
+}
+
+.searchSchoolBoxImg div p {
+    padding: 0;
+    margin: 0;
+}
+
+.searchSchoolBoxStats {
+    text-align: center;
+}
+
+.searchSchoolTitle {
+    font-weight: 500 !important;
+    margin-top: 1rem;
+}
+
+.searchSchoolWordTop{
+    margin-top: 1rem;
+}
+
+.searchSchoolHr {
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #e1e2e4;
+}
+
+.searchSchoolButton {
+    border: 1px solid #0FACF3;
+    background-color: #0FACF3;
+    color: #FFFFFF;
+    height: auto;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+.searchSchoolButtonNA {
+    border: 1px dashed #0FACF3;
+    background-color: #FFFFFF;
+    color: #0FACF3;
+    height: auto;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+.searchSchoolButtonClick {
+    background-color: #FFFFFF;
+    border: 1px solid #0FACF3;
+    color: #0FACF3;
+    height: auto;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.25rem;
+    box-shadow: 0 1px 4px -2px #0FACF3
+}
+
+.searchSchoolButtonClick:hover {
+    background-color: #0FACF3;
+    border: 1px solid #0FACF3;
+    color: #FFFFFF;
+}
+
+.searchSchoolButtonNA {
+    cursor: unset !important;
+}
+
+.searchSchoolButton:hover {
+    background-color: #16b5ff;
+    border: 1px solid #0FACF3;
+    color: #FFFFFF
+}
+
+@media only screen and (max-width: 767px) {
+    .searchSchoolBoxImg {
+      display: none;
+    }
+
+    .searchSchoolTitle {
+        font-size: 1rem;
+    }
+
+   .searchSchoolWordTop, .searchSchoolWord, .searchSchoolButton {
+        font-size: 0.8rem;
+    }
+
+    .searchSchoolBoxStats {
+        text-align: left;
+    }
+
+    .searchSchoolBoxTitle {
+        border-bottom: 1px solid #e1e2e4;
+    }
+  }
+

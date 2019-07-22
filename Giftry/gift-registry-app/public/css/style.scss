@@ -1,0 +1,66 @@
+@import './reset';
+@import './variables';
+@import './mixin';
+@import './header';
+@import './footer';
+@import './home';
+@import './login';
+@import './newborn';
+@import './console';
+
+/* setup for html */
+.main {
+    @include flex-center(column);
+    top: 0;
+}
+
+/* home html */
+.content-container {
+    width: 100vw;
+    background-color: $errPageColor;
+}
+
+.content-box {
+    // margin: auto;
+    // max-width: $maxWidth;
+    margin-top: 80px; 
+    // padding-top: $content;
+    // padding: $contentPadding;
+}
+
+.break {
+    border-top: 1px solid $textColor1;
+    opacity: 0.8;
+    width: 100vw;
+}
+
+.home-break {
+    border-top: 1px solid $textColor1;
+    opacity: 0.8;
+    width: 100%;
+}
+
+
+/* 404 page */
+.err-container {
+    @include flex-center(column);
+    padding: 60px;
+    width: 100vw;
+    height: 100vh;
+    background: $errPageColor;
+
+    p {
+        font-size: 56px;
+        font-weight: $socialWeight;
+        color: $textColor;
+        padding: $err;
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+        margin: $err;
+    }
+
+}

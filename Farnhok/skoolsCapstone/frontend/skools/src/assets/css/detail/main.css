@@ -1,0 +1,276 @@
+#detailMainContainer {
+    display: flex;
+    flex-direction: column;
+}
+#detailMainPhotosContainer {
+    position: relative;
+}
+
+#detailMainBanner {
+    overflow: hidden;
+    -moz-box-shadow: 0 5px 10px -2px #0000001a;
+    -webkit-box-shadow: 0 5px 10px -2px #0000001a;
+    box-shadow: 0 5px 10px -2px #0000001a;
+    float: left;
+    width: 70%;
+}
+
+#detailMainBanner img {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+    object-position: 50% 50%;
+    filter: brightness(120%);
+    border: 2px solid #FFFFFF;
+}
+
+
+#detailMainPhotos {
+    overflow: hidden;
+    float: left;
+    width: 30%;
+}
+
+#detailMainPhotos img {
+    object-fit: cover;
+    height: 25vh;
+    width: 100%;
+    object-position: 50% 50%;
+    filter: brightness(110%);
+    border: 2px solid #FFFFFF;
+}
+
+#detailMainPhotosButton {
+    position: absolute;
+    z-index: 10;
+    top: 22vh;
+    left: 80%;
+    clear: left;
+}
+
+#detailMainPhotosButton button, #detailMainFollowButton button {
+    background-color: #FFFFFF;
+    width: 100%;
+    border: none;
+    border: 1px solid #0FACF3;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    color: #0FACF3;
+}
+
+#detailMainPhotosButton button:hover, #detailMainFollowButton button:hover {
+    border: 1px solid #0FACF3;
+    background-color: #0FACF3;
+    color: #FFFFFF;
+}
+
+#detailMain {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+#detailMainVideo {
+    position: sticky;
+    top: 90px;
+    z-index: 1;
+}
+
+#detailMainVideo video{
+    height: 70vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#detailMainTextPadding {
+    padding: 0 15px;
+}
+
+#detailMainTextFollow {
+    display: flex;
+    justify-content: space-between;
+}
+
+#detailMainClassContainer {
+    margin: 2rem 0 1rem 0;
+    border-bottom: 1px solid #e1e2e4;
+}
+
+.detailMainClass {
+    border: 1px solid #e1e2e4;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    -moz-box-shadow: 0 5px 10px -2px #0000001a;
+    -webkit-box-shadow: 0 5px 10px -2px #0000001a;
+    box-shadow: 0 5px 5px -2px #0000001a;
+}
+
+.detailMainClassTitle {
+    border-bottom: 1px solid #e1e2e4;
+}
+
+.detailMainClass p {
+    padding: 0.3rem 1rem;
+    margin: 0;
+}
+
+.detailMainClassCross {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+#detailMainReviewTitle {
+    margin: 2rem 0 1rem 0;
+    border-bottom: 1px solid #e1e2e4;
+}
+
+#detailMainReviewBox {
+    position: sticky;
+    top: 0.5rem;
+    z-index: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #e1e2e4;
+    padding: 1rem;
+    margin: 0 15px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 5px 10px -2px #0000001a;
+    -webkit-box-shadow: 0 5px 10px -2px #0000001a;
+    box-shadow: 0 5px 5px -2px #0000001a;
+}
+
+#detailMainReviewBoxScore {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+
+#detailMainReviewBoxScore h5 {
+    padding: 0;
+    margin: 0 5px 0 0;
+}
+
+.detailMainReviewBoxStar {
+    margin: 0 2px;
+    position: relative;
+    z-index: -1;
+}
+
+.detailMainReviewBoxScoreDiv {
+    position: relative;
+    background-color: #FFFFFF;
+    opacity: 0%;
+    z-index: 50;
+    cursor: pointer;
+}
+
+#detailMainReviewBox textarea {
+    outline: none;
+    resize: none;
+    width: 100%;
+    border: 1px solid #e1e2e4;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.1rem !important;
+}
+
+#detailMainReviewBox textarea:hover, 
+#detailMainReviewBox textarea:active
+#detailMainReviewBox textarea:focus {
+    border: 1px solid #0FACF3;
+} 
+
+#detailMainReviewButton {
+    display: flex;
+}
+
+#detailMainReviewButton button {
+    background-color: #0FACF3;
+    width: 100%;
+    border: none;
+    border: 1px solid #0FACF3;
+    padding: 0.7rem 1rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+}
+
+#detailMainReviewButton button {
+    background-color: #0FACF3;
+}
+
+.detailMainReviewUser {
+    margin: 1rem 15px 0 15px;
+    padding: 1rem;
+    border-bottom: 1px solid #e1e2e4;
+}
+
+.detailMainReviewUserInfo {
+    display: flex;
+
+}
+
+.detailMainReviewUserInfo img {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid #0FACF3;
+    border-radius: 50%;
+}
+
+.detailMainReviewUserInfo div {
+    margin: auto 1rem;
+}
+
+.detailMainReviewUserComment {
+    margin: 1rem 0;
+}
+
+.detailMainReviewUserComment p, .detailMainReviewUserComment h5 {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    #detailMainBanner {
+        width: 100%;
+        clear: left;
+    }
+
+    #detailMainBanner img {
+        height: 30vh;
+    }
+
+    #detailMainPhotos {
+        width: 50%;
+        display: none;
+    }
+
+    #detailMainPhotosButton {
+        position: absolute;
+        z-index: 10;
+        top: 13vh;
+        left: 65vw;
+        clear: left;
+    }
+
+    #detailMain {
+        width: 100%;
+        margin: 1.5rem auto;
+    }
+    
+    #detailMainVideo video{
+        height: 30vh;
+        margin-bottom: 1.5rem;
+    }
+    
+    #detailMainVideo {
+        position: default;
+    }
+}

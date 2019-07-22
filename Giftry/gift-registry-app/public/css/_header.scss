@@ -1,0 +1,365 @@
+header {
+    @include flex-center(column);
+    top: 0;
+    padding: 0;
+    position: fixed;
+    background-color: $navColor;
+    z-index: 5;
+
+
+    .navbar {
+        padding: $navPadding;
+        width: 100vw;
+        background-color: $navColor;
+
+        /* media query */
+        /* mobile */
+        @include responsive($mobile) {
+            padding: $moPadding;
+        }
+
+        /* phone */
+        @include responsive($phone) {
+            padding: $smallPadding;
+        }
+
+        .width-container {
+            margin: auto;
+            width: 100%;
+            max-width: $maxWidth;
+
+            .nav-wrapper {
+                @include flex-between();
+                background: $navColor;
+
+                .logo-nav {
+
+                    /* media query */
+                    /* tablet */
+                    @include responsive($tablet) {
+                        margin: auto;
+                        padding-left: $logoLeft;
+                    }
+
+                    /* mobile */
+                    @include responsive($mobile) {
+                        margin: auto;
+                        padding-left: $logoLeft;
+                    }
+
+                    /* phone */
+                    @include responsive($phone) {
+                        margin: auto;
+                        padding-left: $logoSmallLeft;
+                    }
+
+                    .logo {
+                        width: 100px;
+                        height: auto;
+
+                    }
+                }
+
+                .nav-menu {
+                    @include flex-center(row);
+                    display: none;
+                    border: none;
+
+                    /* media query */
+                    /* tablet */
+                    @include responsive($tablet) {
+                        display: block;
+                    }
+
+                    /* mobile */
+                    @include responsive($mobile) {
+                        display: block;
+                    }
+
+                    /* phone */
+                    @include responsive($phone) {
+                        display: block;
+                    }
+
+                    position: absolute;
+                    top: 35%;
+                    padding: $menuImg;
+                    opacity: 0.8;
+
+                    img {
+                        font-size: 28px;
+                        max-width: 22px;
+                        height: 25px;
+                    }
+
+                    &:hover {
+                        opacity: 0.6;
+                        transition: 0.2s;
+                        -webkit-transition: 0.2s;
+                        -moz-transition: 0.2s;
+                        -ms-transition: 0.2s;
+                        -o-transition: 0.2s;
+                    }
+                }
+
+                .nav-list {
+                    @include flex-center(row);
+
+                    ul {
+                        @include flex-center(row);
+                        list-style-type: none;
+
+                        /* media query */
+                        @include responsive($tablet) {
+                            &:not(.signup) {
+                                display: none;
+                            }
+                        }
+
+                        @include responsive($mobile) {
+                            &:not(.signup) {
+                                display: none;
+                            }
+                        }
+
+                        @include responsive($phone) {
+                            &:not(.signup) {
+                                display: none;
+                            }
+                        }
+
+                        li {
+                            @include flex-center(row);
+                            float: left;
+                            padding: 0 10px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $textColor;
+
+                            &:hover {
+                                color: $textHoverColor;
+                                transition: 0.2s;
+                                -webkit-transition: 0.2s;
+                                -moz-transition: 0.2s;
+                                -ms-transition: 0.2s;
+                                -o-transition: 0.2s;
+                            }
+                        }
+
+                        button {
+                            font-size: $buttonFont;
+                        }
+
+                        #signup {
+                            padding: 5px 15px;
+                            border-radius: 4px;
+                            -webkit-border-radius: 4px;
+                            -moz-border-radius: 4px;
+                            -ms-border-radius: 4px;
+                            -o-border-radius: 4px;
+                            border: none;
+                            color: $navColor;
+                            background-color: $btnColor;
+
+                            &:hover {
+                                background-color: $btnHoverColor;
+                                transition: 0.2s;
+                                -webkit-transition: 0.2s;
+                                -moz-transition: 0.2s;
+                                -ms-transition: 0.2s;
+                                -o-transition: 0.2s;
+                            }
+                        }
+
+                        #login {
+                            padding: 5px 10px;
+                            border: none;
+                            color: $btnColor;
+                            font-weight: 700;
+
+                            &:hover {
+                                color: $btnHoverColor;
+                            }
+                        }
+
+
+                        #signout {
+                            padding: 5px 10px;
+                            border: none;
+                            color: $btnColor;
+                            font-weight: 700;
+
+                            &:hover {
+                                color: $btnHoverColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ---------- */
+/* mobile nav */
+/* ---------- */
+
+.sidebar {
+    display: none;
+
+    /* media query */
+    @include responsive($tablet) {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: $navColor;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition:0.3s;
+        -webkit-transition:0.3s;
+        -moz-transition:0.3s;
+        -ms-transition:0.3s;
+        -o-transition:0.3s;
+
+
+        a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: $textColor;
+            display: block;
+            transition: 0.3s;
+
+            &:hover {
+                color: $textHoverColor;
+            }
+        }
+
+        #mo-login {
+            color: $btnColor;
+            font-weight: 700;
+
+            &:hover {
+                color: $btnHoverColor;
+            }
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+    }
+
+    @include responsive($mobile) {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: $navColor;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition:0.3s;
+        -webkit-transition:0.3s;
+        -moz-transition:0.3s;
+        -ms-transition:0.3s;
+        -o-transition:0.3s;
+        
+
+
+        a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: $textColor;
+            display: block;
+            transition: 0.3s;
+
+            &:hover {
+                color: $textHoverColor;
+            }
+        }
+
+
+        #mo-login {
+            color: $btnColor;
+            font-weight: 700;
+
+            &:hover {
+                color: $btnHoverColor;
+            }
+        }
+
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+
+    @include responsive($phone) {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: $navColor;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition:0.3s;
+        -webkit-transition:0.3s;
+        -moz-transition:0.3s;
+        -ms-transition:0.3s;
+        -o-transition:0.3s;
+        
+
+
+        a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: $textColor;
+            display: block;
+            transition: 0.3s;
+
+            &:hover {
+                color: $textHoverColor;
+            }
+        }
+
+        #mo-login {
+            color: $btnColor;
+            font-weight: 700;
+
+            &:hover {
+                color: $btnHoverColor;
+            }
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+}

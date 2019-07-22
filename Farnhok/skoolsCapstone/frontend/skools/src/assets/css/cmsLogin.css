@@ -1,0 +1,107 @@
+.hero{
+    min-height: 200px;
+    background-image: url('../../assets/image/schoolpage.jpg');
+    background-color: #ffd9004b;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.hero li{
+    list-style-type: none;
+}
+
+
+#cmsLoginForm {
+    /* border: 1px solid #E6EAEE; */
+    width: 60%;
+    margin:  auto;
+    min-height: 200px;
+    padding: 1rem 1rem 0.5rem 1rem;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 5px 10px -2px #0000001a; */
+}
+
+
+#loginNotRegister {
+    margin-top: 0.5rem;
+}
+
+.cmsLoginInput {
+    border-radius: 8px !important;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.cmsLoginInput:focus, .cmsLoginInput:hover {
+    border: 1px solid #0FACF3 !important;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+#cmsLoginButtonBox {
+    text-align: center;
+}
+
+.cmsLoginButton {
+    background-color: #0FACF3;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    height: 3.2rem;
+}
+
+.cmsSignupButton {
+    background-color: #e99d0f;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    height: 3.2rem;
+}
+
+button:focus {
+     outline: 0 !important; 
+    }
+
+.cmsLoginButton:hover {
+    background-color: #00aeff;
+}
+
+#errorMessage {
+    color: #F370D7
+}
+
+.errorStyle {
+    border: 1px solid #F370D7 ;
+    border-radius: 8px !important;
+    height: 3rem;
+    width: 100%;
+    color:  #767e88;
+    margin-bottom: 1rem;
+}
+
+.toSignup{
+ color: #0FACF3;
+ text-decoration-line: underline;
+}
+
+.toSignup:hover {
+    color: #00aeff;
+} 

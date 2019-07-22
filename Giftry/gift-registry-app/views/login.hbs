@@ -1,0 +1,68 @@
+<div class="form-wrapper" >
+
+    <div class="form-container" >
+        <div class="form-box">
+            <!-- logo & text -->
+            <div class="form-top">
+                <img src="../img/logo/logo_trans.png" alt="logo">
+            </div>
+
+            <!-- social login -->
+            <div class="social-log">
+
+                <p>Log in via social network</p>
+
+                <div class="social-wrapper">
+                    <div class="social">
+                        <a href="/auth/facebook"><img src="../img/social/facebook.png" alt="facebook"></a>
+                    </div>
+
+                    <div class="social">
+                        <a href="/"><img id="google-icon" src="../img/social/google-plus3.png" alt="google+"></a>
+                    </div>
+                </div>
+
+                <div class="line">
+                    <!-- line -->
+                </div>
+
+            </div>
+
+            <!-- form, input Olivia:route is place here also-->
+            <form class="main-form" id='local-login' action='/login' method='post'>
+                <div class="form-mid">
+
+                    <p>Log in your Giftry account</p>
+
+                    <div class="data">
+                        <input type="text" name="username" placeholder=" Username" required>
+                    </div>
+
+                    <div class="data">
+                        <input type="password" name="password" placeholder=" Password" required>
+                    </div>
+                </div>
+
+
+                <!-- signup page -->
+                <div class="form-sign">
+                    <a class="create" href="/signup">Create account</a>
+                </div>
+
+
+                <!-- back & login -->
+                <div class="form-bottom">
+
+                    <a class="back" href="/">Back</a>
+
+                    <!-- route -->
+                    {{!-- <form id='local-login' action='/login' method='post'> --}}
+                        <input type='submit' class="login-btn" value='Log In'/>
+                    </form>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>

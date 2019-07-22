@@ -1,0 +1,87 @@
+#settingEditProfileContainer {
+    border: 1px solid #e1e2e4;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px -2px #0000001a;
+    display: flex;
+    flex-direction: column;
+}
+
+#settingEditProfileHeader {
+    border-bottom: 1px solid #e1e2e4;
+    padding: 1rem;
+}
+
+#settingEditProfileHeader h5 {
+    margin: 0;
+}
+
+#settingEditProfileIcon {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 1px solid #0FACF3;
+}
+
+#settingEditProfilePhoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#settingEditProfilePhotoMargin {
+    margin: auto 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.settingEditProfilePadding {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.settingEditProfileButtonUpload, .settingEditProfileButtonSave {
+    background-color: #0FACF3;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    height: 3.2rem;
+}
+
+.settingEditProfileButtonSave {
+    float: left;
+}
+
+.settingEditProfileButton:hover {
+    background-color: #16b5ff;
+}
+
+@media only screen and (max-width: 767px) {
+    #settingEditProfilePhoto {
+        flex-direction: column;
+    }
+
+    #settingEditProfilePhotoMargin {
+        margin-top: 0.5rem;
+    }
+
+    #settingEditProfilePhotoMargin p {
+        display: none;
+    }
+
+    .settingEditProfilePadding {
+        padding: 1rem 0.5rem 0 0.5rem;
+    }
+
+    .settingEditProfileButton {
+        margin-bottom: 0.5rem;
+    }
+  }

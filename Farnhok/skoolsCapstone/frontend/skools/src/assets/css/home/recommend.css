@@ -1,0 +1,220 @@
+#homeFeaturedSchool {
+    width: 90%;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -moz-box-shadow: 0 5px 10px -2px #0000001a;
+    -webkit-box-shadow: 0 5px 10px -2px #0000001a;
+    box-shadow: 0 5px 10px -2px #0000001a;
+}
+
+#homeFeaturedSchoolImage {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 57vh;
+    width: 100%;
+    object-position: 50% 64%;
+    filter: brightness(120%);
+}
+
+#homeFeaturedSchoolText {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1rem;
+    z-index: 0;
+    color: #FFFFFF;
+}
+
+.homeFeaturedSchoolTextBold {
+    font-weight: 500 !important;
+}
+
+#homeFeaturedSchool:hover .homeFeaturedSchoolTextBold {
+    font-size: 1.3rem !important;
+    transition: all 0.3s;
+}
+
+#homeRecommendSchool {
+    width: 90%;
+    height: 100%;
+    margin: 2rem auto 0 auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#homeRecommendSchooContainer {
+    width: 100%;
+}
+
+.homeRecommendSchoolBox {
+    float: left;
+    width: 24%;
+    border: 1px solid #e1e2e4;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.homeRecommendSchoolBox1 {
+    margin: 0 1.33%;
+}
+
+.homeRecommendSchoolBox2 {
+    margin: 0 1.33% 0 0;
+}
+
+.homeRecommendSchoolBox:hover #homeRecommendSchoolImage {
+    transition: all 0.5s;
+    transform: scale(1.02);
+}
+
+#homeRecommendSchoolImage {
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 40vh;
+    width: 100%;
+}
+
+#homeRecommendSchoolText div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#homeRecommendSchoolText p, #homeRecommendSchoolText h5 {
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.homeRecommendSchoolTextBold {
+    font-weight: 500 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .homeRecommendSchoolBox {
+        float: left;
+        width: 49%;
+    }
+    .homeRecommendSchoolBox1 {
+        margin: 0 0 0 1%;
+    }
+
+    .homeRecommendSchoolBox2 {
+        margin: 1rem 1% 0 0;
+    }
+
+    .homeRecommendSchoolBox3 {
+        margin: 1rem 0 0 0;
+    }
+
+    #homeRecommendSchoolImage {
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .homeRecommendSchoolBox {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .homeRecommendSchoolBox3 {
+        margin: 0;
+    }
+
+    #homeRecommendSchoolImage {
+        height: 25vh;
+    }
+}
+
+
+
+#homeRecommendArticle {
+    width: 90%;
+    height: 100%;
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#homeRecommendSchooContainer {
+    width: 100%;
+}
+
+.homeRecommendArticleBox {
+    float: left;
+    width: 32.66%;
+    border: 1px solid #e1e2e4;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.homeRecommendArticleBox1 {
+    margin: 0 1%;
+}
+
+.homeRecommendArticleBox:hover #homeRecommendArticleImage {
+    transition: all 0.5s;
+    transform: scale(1.02);
+}
+
+#homeRecommendArticleImage {
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 45vh;
+    width: 100%;
+}
+
+#homeRecommendArticleText div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#homeRecommendArticleText p, #homeRecommendArticleText h5 {
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.homeRecommendArticleTextBold {
+    font-weight: 500 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .homeRecommendArticleBox {
+        float: left;
+        width: 49%;
+    }
+    .homeRecommendArticleBox1 {
+        margin: 0 0 0 1%;
+    }
+
+    .homeRecommendArticleBox2 {
+        display: none;
+    }
+
+    #homeRecommendArticleImage {
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .homeRecommendArticleBox {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .homeRecommendArticleBox2 {
+        display: none;
+    }
+
+    #homeRecommendArticleImage {
+        height: 25vh;
+    }
+}

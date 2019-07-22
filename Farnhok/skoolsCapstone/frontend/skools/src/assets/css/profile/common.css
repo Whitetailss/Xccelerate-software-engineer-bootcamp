@@ -1,0 +1,21 @@
+#profilePageContainer {
+    width: 90%;
+    padding: 0.1rem;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+    #profilePageContainer {
+        width: 100%;
+        padding: 0.1rem;
+        margin-top: 1rem;
+    }
+}
+
+/* @media only screen and (max-width: 767px) {
+    #profilePageContainer {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+} */

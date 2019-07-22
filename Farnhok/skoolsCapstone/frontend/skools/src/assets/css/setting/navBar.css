@@ -1,0 +1,26 @@
+#settingAccountContainer {
+    margin-left: 1rem;
+}
+
+#settingAccountContainer div{
+    margin: 1rem 0
+}
+
+.settingProfileNavTextAdd {
+    font-weight: 500 !important;
+    color: #0FACF3 !important;
+    text-decoration: none !important;
+}
+
+#settingAccountContainer:hover  .settingProfileNavText {
+    font-weight: 400 !important;
+}
+
+.settingProfileNavText {
+    text-decoration: none !important;
+    color: #000000 !important
+}
+
+.settingProfileNavText:hover {
+    color: #0FACF3 !important;
+}

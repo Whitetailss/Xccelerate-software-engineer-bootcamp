@@ -1,0 +1,16 @@
+#footerContainer {
+    height: 8vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1px solid #E6EAEE;
+    margin-top: 1rem;
+    clear: left;
+
+}
+
+#footerContainer p {
+    color: #888b8b;
+    margin: 0 1rem;
+}

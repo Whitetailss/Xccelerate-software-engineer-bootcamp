@@ -1,0 +1,92 @@
+<div class='g-wrapper'>
+  <div class='g-sidebar'>
+    <div class='sidebar-header'>
+
+{{#each result}}
+<div id='registry-setting' data-id='{{registry_id}}'>{{ocassion}} Registry</div>
+{{/each}}
+
+      <h3>Newborn Baby Gift Registry</h3>
+    </div>
+
+    <div class='sidebar-panel'>
+      <ul>
+        <li class='cat-head'><a>Feeding</a>
+          <ul>
+            <li><a class='cat-item' data-value='milk'>Milk Formula</a>
+            <li><a class='cat-item' data-value='bottle'>Bottle</a>
+            <li><a class='cat-item' data-value='pacifier'>Pacifier</a>
+          </ul>
+        </li>
+        <li class='cat-head'><a>Clothings</a>
+          <ul>
+            <li><a class='cat-item' data-value="imono">Kimono Tops</a>
+            <li><a class='cat-item' data-value='nesies'>Onesies</a>
+            <li><a class='cat-item' data-value='burp'>Burp Cloth</a>
+            <li><a class='cat-item' data-value='swaddle'>Swaddle blanket</a>
+          </ul>
+        </li>
+
+        <li class='cat-head'><a>Baby Gear</a>
+          <ul>
+            <li><a class='cat-item' data-value='stroller'>Stroller</a>
+            <li><a class='cat-item' data-value='seats'>Car Seats</a>
+          </ul>
+        </li>
+        <li class='cat-head'><a>Diapers + Cleaning</a>
+          <ul>
+            <li><a class='cat-item' data-value='diaper'>Diapers</a>
+            <li><a class='cat-item' data-value='wipes'>Baby Wipes</a>
+            <li><a class='cat-item' data-value='shampoo'>Shampoo</a>
+            <li><a class='cat-item' data-value='lotion'>Lotion</a>
+          </ul>
+        </li>
+        <li class='cat-head'><a>Nursery Room</a>
+          <ul>
+            <li><a class='cat-item' data-value='crib'>Crib</a>
+            <li><a class='cat-item' data-value='dresser'>Dresser</a>
+          </ul>
+        </li>
+        <li class='cat-head'><a>Entertainment</a>
+          <ul>
+            <li><a class='cat-item' data-value='playmat'>Playmat</a>
+            <li><a class='cat-item' data-value='softtoy'>Soft Toy</a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class='gallery'>
+
+    <h1>Select Your Favorite Gifts</h1>
+
+    <form action="/" method='post' id="select-form">
+
+      <div id='product-list'>
+        <!--handlebars complie-->
+      </div>
+
+    
+    </form>
+
+
+    <div class="pick-gift">
+      {{#each gItem}}
+
+      <div class="theGift">
+        <div class="reg-info">
+          <p>{{ocassionName}}</p>
+          <p>{{registryId}}</p>
+        </div>
+
+        <div>
+          <p>Product: <span data-name="{{productName}}"></span> Product ID: <span data-id="{{productID}}"></span></p>
+        </div>
+      </div>
+      {{/each}}
+
+    </div>
+  </div>
+  

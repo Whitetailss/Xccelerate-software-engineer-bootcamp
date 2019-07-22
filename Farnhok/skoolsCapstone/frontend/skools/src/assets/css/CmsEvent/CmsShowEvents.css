@@ -1,0 +1,42 @@
+.eventContent {
+    display: flex;
+    justify-content: center;
+    align-content: initial;
+}
+
+.eventContent CardTitle{
+    font-weight: bold;
+    
+}
+
+.name {
+    color: blue;
+}
+
+.EventModalMainContent input{
+    border: 1px solid #e1e2e4 !important;
+    width: 100%;
+    padding-left: 12px;
+    border-radius: 5px !important;
+    height: 3rem;
+    color:  #767e88;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0.5px 2px -1px #0000001a
+}
+
+.subInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.subInfo p{
+ margin-left: 50px;
+
+}
+
+.description {
+    color: blue;
+}

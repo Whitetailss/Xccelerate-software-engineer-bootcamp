@@ -1,0 +1,30 @@
+@mixin flex-center ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap $direction;
+}
+
+@mixin flex-between () {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-evenly () {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin responsive ($size) {
+    @media (max-width: #{$size}) {
+        @content;
+    }
+}
+
+@mixin responsive-min ($size) {
+    @media (min-width: #{$size}) {
+        @content;
+    }
+}

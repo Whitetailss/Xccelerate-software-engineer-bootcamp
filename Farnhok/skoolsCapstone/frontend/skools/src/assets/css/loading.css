@@ -1,0 +1,26 @@
+.homeRecommedArticleLoadingbox {
+    display: flex;
+    justify-content: center;
+}
+
+.homeRecommedArticleLoading {
+    height:20px;
+    width: 20px;
+    margin: 4rem 0.5rem;
+    border-radius: 50%;
+}
+
+#homeRecommedArticleLoading1 {
+    border: 1px solid #add7eb;
+    background-color: #add7eb;
+}
+
+#homeRecommedArticleLoading2 {
+    border: 1px solid #6ac2eb;
+    background-color: #6ac2eb;
+}
+
+#homeRecommedArticleLoading3 {
+    border: 1px solid #0FACF3;
+    background-color: #0FACF3
+}

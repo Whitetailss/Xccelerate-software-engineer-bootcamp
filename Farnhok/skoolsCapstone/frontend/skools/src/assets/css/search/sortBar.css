@@ -1,0 +1,92 @@
+#sortContainer {
+    border-bottom: 1px solid #e1e2e4;
+    border-left: 1px solid #e1e2e4;
+    border-right: 1px solid #e1e2e4;  
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 90%;
+    margin: 0 auto 0.5rem auto;
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    box-shadow: 0 1px 8px -2px #0000001a
+}
+
+.searchSortDropButton {
+    background-color: #FFFFFF;
+    border-top: 1px solid #e1e2e4;
+    border-left: 1px solid #e1e2e4;
+    border-right: 1px solid #e1e2e4;
+    width: 90%;
+    color: #000000;
+    padding: 0.5rem 2rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    height: 3.2rem;
+    margin: 0.5rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sortBox, .sortBox1, .sortBox2, .sortBox3 {
+    border-top: 1px solid #e1e2e4;
+    border-bottom: 1px solid #e1e2e4;
+    border-left: 1px solid #e1e2e4;
+    height: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sortBox:hover, .sortBox1:hover, .sortBox2:hover, .sortBox3:hover {
+    border: 1px solid #16b5ff;
+    cursor: pointer;
+}
+
+.sortBox {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sortBox3 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid #e1e2e4;
+}
+
+@media only screen and (max-width: 767px) {
+    .sortBox, .sortBox1, .sortBox2, .sortBox3 {
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+    }
+
+    .sortBox {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 5px;
+        border: 1px solid #e1e2e4;
+    }
+    .sortBox1 {
+        border-top-right-radius: 5px;
+        border-top: 1px solid #e1e2e4;
+        border-right: 1px solid #e1e2e4;
+    }
+    .sortBox2 {
+        border-bottom-left-radius: 5px;
+        border-left: 1px solid #e1e2e4;
+        border-bottom: 1px solid #e1e2e4;
+    }
+    .sortBox3 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 5px;
+        border: 1px solid #e1e2e4;
+
+    }
+  }
+
+  @media (min-width: 1200px){
+    .container {
+        max-width: 1800px !important;
+    }
+}

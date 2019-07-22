@@ -1,0 +1,158 @@
+#compareBarContainer {
+    background-color: #0FACF3;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    padding: 0.25rem;
+    width: 100%;
+    opacity: .97;
+    border-top: 2px solid #FFFFFF;
+}
+
+.compareBarBoxHidden {
+    display: none !important;
+}
+
+#compareBarBoxContainer {
+    display: flex;
+}
+
+.compareBarBox {
+    background: #0FACF3;
+    width: 15rem;
+    height: 8.5rem;
+    margin: 0.5rem 1rem;
+    border: 2px dashed #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.compareBarBoxResult {
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.compareBarBoxResult:hover{
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+
+}
+
+.compareBarBoxResult:hover .compareBarWord,.compareBarBoxResult:hover .compareBarDeleteButton {
+    color: #0FACF3;
+}
+
+.compareBarWord, .compareBarWordEmpty {
+    color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+    font-weight: 700 !important;
+}
+
+.compareBarWordEmpty {
+    opacity: 0.9;
+    padding: 0 10%; 
+    cursor: default;
+}
+
+.compareBarDeleteButton {
+    position: absolute;
+    top: 3px;
+    right: 6px;
+    color: #FFFFFF;
+}
+
+.compareBarDeleteButton:hover{
+    opacity: 1;
+}
+
+#compareBarButtonBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+}
+
+.compareBarButtonBoxButton {
+    border: 2px solid #FFFFFF;
+    background-color: #0FACF3;
+    color: #FFFFFF !important;
+    width: 10rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0.5rem;
+    font-weight: 700 !important;
+}
+
+#compareBarButtonBox p {
+    opacity: 0.9;
+    cursor: default;
+    border: 2px dashed #FFFFFF;
+    background-color: #0FACF3;
+    color: #ffffff;
+    width: 10rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0.5rem;
+    font-weight: 700 !important;
+}
+
+.compareBarButtonBoxButton:hover{
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #0FACF3 !important;
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 700px) {
+    .compareBarBox {
+        background: #0FACF3;
+        margin: 0.5rem;
+        height: 5rem;
+        width: 10rem;
+        border: 2px dashed #FFFFFF;
+        border-radius: 5px;
+    }
+
+    .compareBarBoxResult {
+        border: 2px solid #FFFFFF;
+    }
+
+    #compareBarContainer {
+        flex-direction: column;
+    }
+
+    #compareBarButtonBox {
+        flex-direction: row;
+    }
+
+    #compareBarButtonBox button, #compareBarButtonBox a{
+        border: 2px solid #FFFFFF;
+
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0rem 0.5rem;
+    }
+
+    #compareBarButtonBox p{
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0rem 0.5rem;
+    }
+  }

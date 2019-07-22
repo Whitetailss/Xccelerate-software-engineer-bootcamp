@@ -1,0 +1,110 @@
+
+.kep-login-facebook {
+    background-color: #0FACF3 !important;
+    border: none !important;
+    width: 100%;
+    padding: 0 !important;
+    border-radius: 8px !important;
+    height: 3.2rem;
+    font-size: 1.2rem !important;
+}
+
+
+
+.kep-login-facebook:hover {
+    background-color: #00aeff !important;
+}
+
+#loginContainer {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loginForm {
+    border: 1px solid #E6EAEE;
+    width: 90%;
+    margin:  auto;
+    min-height: 200px;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px -2px #0000001a;
+}
+
+#loginOr {
+    display: flex;
+    justify-content: space-around
+}
+
+.loginText p, .loginText h3 {
+    text-align: center;
+}
+
+#loginNotRegister {
+    margin-top: 1rem;
+}
+
+.loginInput {
+    border-radius: 8px !important;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.loginInput:focus, .loginInput:hover {
+    border: 1px solid #0FACF3 !important;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+#loginButtonBox {
+    text-align: center;
+}
+
+.loginButton {
+    background-color: #0FACF3;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    height: 3.2rem;
+}
+
+button:focus {
+     outline: 0 !important; 
+    }
+
+.loginButton:hover {
+    background-color: pink;
+}
+
+#errorMessage {
+    color: #F370D7
+}
+
+.errorStyle {
+    border: 1px solid #F370D7 ;
+    border-radius: 8px !important;
+    height: 3rem;
+    width: 100%;
+    color:  #767e88;
+    margin-bottom: 1rem;
+}
+
+.loginLink {
+ color: #0FACF3;
+}
+
+.loginLink:hover {
+    color: #00aeff;
+}

@@ -1,0 +1,38 @@
+#socialInput {
+    border: none;
+    border-color: transparent;
+}
+
+#imageDiv{
+    display: inline;
+}
+
+#postImage {
+    height: 25%;
+    width: 25%;
+}
+
+#socialCardBody {
+    background-color: #eeeeee;
+    height: 100vh;
+}
+
+
+@media (min-width: 992px) {
+    .gedf-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .gedf-card {
+        margin-bottom: 2.77rem;
+    }
+} */
+
+.social_card_card-body {
+    padding-bottom: 0;
+}
+
+.social_card_form-control, .socail_card_btn {
+    min-height: 38px;
+    border-radius: 2px;
+}

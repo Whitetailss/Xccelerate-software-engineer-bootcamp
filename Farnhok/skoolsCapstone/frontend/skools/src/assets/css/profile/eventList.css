@@ -1,0 +1,131 @@
+#profileEventContainer {
+    background-color: #FEFEFE;
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #e1e2e4;
+    border-radius: 8px;
+    padding: 0 1rem 1rem 1rem;
+    box-shadow: 0 5px 10px -2px #0000001a;
+}
+
+#profileEventHeader {
+    width: 100%;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+#profileEventHeader h5 {
+    margin: 1rem 0;
+}
+
+#profileEventList {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+    border-radius: 8px;
+
+}
+
+.profileEventListSchoolBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileEventListSchool {
+    border: 1px solid #e1e2e4;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px -1px #0000001a
+}
+
+.profileEventListImageBox img {
+    max-height: 100%;
+    max-width: 100%;
+    margin:0; 
+    padding:0; 
+}
+
+.profileEventListSchoolName {
+    margin: 0rem; 
+    font-weight: 500 !important;
+}
+
+.profileEventListEventBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.profileEventListButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profileEventListButton button {
+    border: 1px solid #0FACF3;
+    background-color: #0FACF3;
+    color: #FFFFFF;
+    height: auto;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.25rem 0;
+}
+
+.profileEventListButton button:hover {
+    background-color: #16b5ff;
+}
+
+@media only screen and (max-width: 991px) {
+    .profileEventListButton {
+        flex-direction: row;
+    }
+
+    .profileEventListImageBox {
+        height: 20vh;
+    }
+
+    .profileEventListButton button {
+        margin: 0.2rem 0.2rem
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #profileEventList {
+        display: flex;
+    }
+
+    #profileEventContainer {
+        height: 41vh;
+        margin: 0.2rem 0; 
+    }
+
+    .profileEventListImageBox {
+        height: 15vh;
+    }
+
+    .profileEventListSchool {
+        padding: 1rem;
+        height: 90%;
+    }
+    
+    .profileEventListSchoolName {
+        margin: 0.5rem 0;
+    }
+
+    .profileEventListButton button {
+        padding: 0.4rem 1rem;
+    }
+}
